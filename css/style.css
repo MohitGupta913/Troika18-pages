@@ -409,9 +409,29 @@ div {
     font-size: 2.1vw;
  }
 
+.foot{
+    font-size: 1.2vw;
+    background-color: #c19a6b;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    font-weight: 500;
+}
 
- .g-maps{
-
+ @media only screen and (max-width: 650px){
+    .contact-us{
+        font-size: 18px;
+        font-weight: 800;
+    }
+    .contact-us-sub{
+        font-size: 16px;
+    }
+    .foot{
+        font-size: 16px;
+    }
  }
+
+
+
+
 
 
