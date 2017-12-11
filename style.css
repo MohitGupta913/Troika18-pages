@@ -5,7 +5,7 @@ html {
     color: rgba(0,0,0,0.87);
 }
 .main{
-    padding-top: 30px;
+    padding-top: 60px;
     padding-left:  100px;
     color : green ;
 }
@@ -32,6 +32,14 @@ html {
     font-size: 25px;
     box-shadow: 3px 3px 16px 2px transparent;
 }
+
+.buttons {
+    display: inline-flex;
+    align-items: center;
+    padding: 1% 0% 0% 15%;
+    justify-content: space-between;
+    width : auto;
+}
 .footer-social-icons {
     position: absolute;
     margin-left: 3%;
@@ -49,6 +57,12 @@ html {
     -webkit-transition: all .3s;
     -moz-transition: all .3s;
     transition: all .3s;
+}
+.main {
+    padding-left: 30px;
+}
+.buttons {
+    padding-left: 10px;
 }
 }
 
@@ -96,6 +110,7 @@ div{
 .navbar-default {
     border-color: transparent;
     background-color: beige;
+    border-radius: 10px;
 }
 
 .navbar-default .navbar-brand {
@@ -139,19 +154,19 @@ div{
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: white;
+    color: #fff;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
     color: #fff;
-    background-color: #1ee2e7;
+    background-color: #c19a6b;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #fff;
-    background-color: #17d0d5;
+    background-color: #247571;
 }
 
 @media(min-width:768px) {
@@ -191,4 +206,5 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
+    text-decoration: none;
 }
