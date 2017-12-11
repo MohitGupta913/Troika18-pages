@@ -86,8 +86,8 @@
       
         </div> -->
         <div class ="buttons" style="display: inline-flex; align-items: center; padding: 1% 0% 0% 15%; justify-content: space-between; width : auto;">
-          <div ><a href="#" class="header-divs"><div class="beta-home-button">Login</div></a></div>
-          <div style="margin-left: 9%;"><a href="/spp" class="header-divs"><div class="beta-home-button">Register</div></a></div>
+          <div ><a href="#" class="header-divs" style="text-decoration: none;""><div class="beta-home-button">Login</div></a></div>
+          <div style="margin-left: 9%;"><a style="text-decoration: none;" href="/spp" class="header-divs"><div class="beta-home-button">Register</div></a></div>
         </div>
       </div>
 
@@ -145,5 +145,18 @@
     </script>
     <!-- Plugin JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $('.beta-home-button').bind("mouseover", function(){
+            var color  = $(this).css("background-color");
+
+            $(this).css("background", "#1ee2e7");
+
+            $(this).bind("mouseout", function(){
+                $(this).css("background", color);
+            })    
+        })    
+    })
+</script>
 </body>
 </html>
