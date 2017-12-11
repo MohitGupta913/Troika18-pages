@@ -90,7 +90,6 @@
           <div style="margin-left: 9%;"><a style="text-decoration: none;" href="/spp" class="header-divs"><div class="beta-home-button">Register</div></a></div>
         </div>
       </div>
-
       <div class="footer-social-icons" style="position: fixed;">
         <ul class="social-icons" style="float: left; padding: 0% 0% 1% 5%; list-style: none;">
           <li class="beta-home-social-list-side">
@@ -149,11 +148,11 @@
     $(document).ready(function() {
         $('.beta-home-button').bind("mouseover", function(){
             var color  = $(this).css("background-color");
-
             $(this).css("background", "#1ee2e7");
-
+            $(this).css("border-color", "#1ee2e7");
             $(this).bind("mouseout", function(){
                 $(this).css("background", color);
+                $(this).css("border-color", "black");
             })    
         })    
     })
