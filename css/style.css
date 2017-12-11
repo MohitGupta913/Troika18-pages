@@ -225,17 +225,17 @@ div {
 }
 
 .about-us{
-    font-size: 3.4vw;
+    font-size: 3.2vw;
     font-weight: 400;
 }
 
 .about-us-text{
-    font-size: 18px;
+    font-size: 24px;
 }
 
 @media only screen and (max-width: 650px){
     .about-us-text{
-        font-size : 12px;
+        font-size : 15px;
     }
     .about-us{
         font-size:16px ;
@@ -290,7 +290,7 @@ div {
 }
 
 .contact {
-    height: 80vh;
+    height: 120vh;
     margin-top: 30px;
     padding: 30px 80px;
     border-top: 6px solid maroon;
@@ -304,3 +304,28 @@ div {
     font-weight: 300;  
     font-family: Shadows Into Light ;
 }
+
+#map {
+   width: 100%;
+   height: 440px;
+   background-color: grey;
+   border : solid 5px #800000;
+   border-radius: 10px;
+   
+ }
+
+.contact-us {
+    font-weight: 300; 
+    font-size: 3vw;
+ }
+
+.contact-us-sub {
+    font-size: 2.1vw;
+ }
+
+
+ .g-maps{
+
+ }
+
+
