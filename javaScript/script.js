@@ -1,4 +1,4 @@
-//Navbar Javascript
+
       $(function() {
           $('a.page-scroll').bind('click', function(event) {
               var $anchor = $(this);
@@ -17,7 +17,7 @@
           $('.navbar-toggle:visible').click();
       });
 
-//Login/Register button javascript
+
     $(document).ready(function() {
         $('.beta-home-button').bind("mouseover", function(){
             var color  = $(this).css("background-color");
