@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-
-=======
 //Preloader
     $(window).on('load', function() {
         // Animate loader off screen
@@ -9,7 +6,6 @@
 
 
 //Navbar Javascript
->>>>>>> aaea8ae9f8d620901ad403ee40752014f3c042bd
       $(function() {
           $('a.page-scroll').bind('click', function(event) {
               var $anchor = $(this);
@@ -28,7 +24,7 @@
           $('.navbar-toggle:visible').click();
       });
 
-
+//Login/Register button javascript
     $(document).ready(function() {
         $('.beta-home-button').bind("mouseover", function(){
             var color  = $(this).css("background-color");
