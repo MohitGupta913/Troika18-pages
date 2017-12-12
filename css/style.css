@@ -23,7 +23,8 @@ a.active {
 	width: 100%;
 	height: 100%;
 	z-index: 9999;
-	background: url(../img/Preloader_3.gif) center no-repeat #fff;
+    background: url(../img/Preloader_3.gif) center no-repeat #fff;
+    background-color: beige;
 }
 
 .navbar-brand img {
@@ -96,11 +97,14 @@ a.active {
     background-color: #247571;
 }
 
-@media(min-width:768px) {
+@media only screen and (max-width: 768px) {
+    
     .navbar-default {
-        padding: 25px 0;
+        padding: 12px 0;
         border: 0;
-        background-color: transparent;
+        /*background-color: transparent;*/
+        background-color: rgba(245, 245, 220, 0.7);
+        /*opacity: 0.7;*/
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -117,12 +121,13 @@ a.active {
         border-radius: 3px;
     }
 
-    .navbar-default.navbar-shrink {
-        padding: 10px 0;
-        background-color: transparent;
+    .navbar-default .navbar-shrink {
+        padding: 5px 0;
+        /*background-color: transparent;*/
+        background-color: rgba(245, 245, 220, 0.8);
     }
 
-    .navbar-default.navbar-shrink .navbar-brand {
+    .navbar-default .navbar-shrink .navbar-brand {
         font-size: 1.5em;
     }
 }
@@ -138,7 +143,7 @@ a.active {
 
 .navbar.scrolled {
     background: rgb(245, 245, 220); /* IE */
-    background: rgba(245, 245, 220, 0.8); /* NON-IE */
+    background: rgba(245, 245, 220, 0.7); /* NON-IE */
 }
 
 
@@ -310,12 +315,10 @@ div {
 }
 
 .contact {
-    /*height: 120vh;*/
     text-align: center;
     margin-top: 18px;
-   
     border-top: 6px solid maroon;
-    /*border-bottom: 6px solid maroon;*/
+    border-bottom: 6px solid maroon;
     border-radius: 20px;
 }
 
@@ -421,7 +424,7 @@ div {
    background-color: grey;
    border : solid 5px #800000;
    border-radius: 10px;
-   
+   margin-bottom: 10px;
  }
 
 .contact-us {
