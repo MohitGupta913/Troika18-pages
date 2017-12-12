@@ -254,6 +254,9 @@ div {
         font-size:16px ;
         font-weight: 1000;
     }
+    .about-troika{
+        font-size: 34px;
+    }
 }
 
 /* Three columns side by side */
@@ -300,7 +303,7 @@ div {
 
 .contact {
     /*height: 120vh;*/
-    text-align: right;
+    text-align: center;
     margin-top: 18px;
    
     border-top: 6px solid maroon;
@@ -449,17 +452,7 @@ nav.social {
     }
  }
 
- /*.g-maps{
-    margin-left: 0;
- }
-
- @media only screen and (max-width: 650px){
-    .g-maps{
-        margin-left: ;
-    }
- }*/
-
-
+ 
 
 
 
