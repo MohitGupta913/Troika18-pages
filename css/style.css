@@ -300,6 +300,7 @@ div {
 
 .contact {
     /*height: 120vh;*/
+    text-align: right;
     margin-top: 18px;
    
     border-top: 6px solid maroon;
