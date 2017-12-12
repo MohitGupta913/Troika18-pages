@@ -162,15 +162,7 @@ a.active {
     justify-content: space-between;
     width : auto;
 }
-/*.footer-social-icons {
-    position: absolute;
-    margin-left: 2%;
-    margin-top: 6%;
-}
 
-.beta-home-social-list-side {
-    margin-bottom: 6px;
-}*/
 @media only screen and (max-width: 550px){
     .beta-home-button {
         font-size: 17px;
@@ -326,14 +318,11 @@ div {
     }
 }
 
-nav.social {
-    z-index: 10;
-}
-
 .social {
     position: fixed;
     top: 55%;
     width: 50px;
+    z-index: 10;
   }
   .social ul {
     padding: 0px;
