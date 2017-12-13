@@ -46,8 +46,8 @@
     $(document).ready(function() {
         $('.beta-home-button').bind("mouseover", function(){
             var color  = $(this).css("background-color");
-            $(this).css("background", "#c19a6b");
-            $(this).css("border-color", "#c19a6b");
+            $(this).css("background", "#45A29E");
+            $(this).css("border-color", "#45A29E");
             $(this).bind("mouseout", function(){
                 $(this).css("background", color);
                 $(this).css("border-color", "black");
