@@ -5,6 +5,11 @@ html {
     color: rgba(0,0,0,0.87);
 }
 
+body {
+    background-color: #C5C6C7;
+    font-family: Quicksand;
+}
+
 a,
 a:hover,
 a:focus,
@@ -42,32 +47,32 @@ a.active {
 
 .navbar-default .navbar-brand {
     font-family: "Kaushan Script","Helvetica Neue",Helvetica,Arial,cursive;
-    color: maroon;
+    color: #45A29E;
 }
 
-.navbar-default .navbar-brand:hover,
+/*.navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
     color: #fec503;
-}
+}*/
 
 .navbar-default .navbar-collapse {
-    border-color: beige;
+    border-color: #C5C6C7;
 }
 
 .navbar-default .navbar-toggle {
-    border-color: maroon;
-    background-color: maroon;
+    border-color: #45A29E;
+    background-color: #45A29E;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
-    background-color: #fff;
+    background-color: #C5C6C7;
 }
 
 .navbar-default .navbar-toggle:hover,
 .navbar-default .navbar-toggle:focus {
-    background-color: maroon;
+    background-color: #45A29E;
 }
 
 .navbar-default .nav li a {
@@ -75,25 +80,25 @@ a.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: maroon;
+    color: #45A29E;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #c19a6b;
+    color: #1F2833;
 }
 
 .navbar-default .navbar-nav>.active>a {
     border-radius: 0;
-    color: #fff;
-    background-color: #c19a6b;
+    color: #45A29E;
+    background-color: #1F2833;
 }
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #fff;
-    background-color: #247571;
+    color: #66FCF1;
+    background-color: #0B0C10;          /*old blue*/
 }
 
 @media only screen and (max-width: 768px) {
@@ -101,9 +106,7 @@ a.active {
     .navbar-default {
         padding: 12px 0;
         border: 0;
-        /*background-color: transparent;*/
-        background-color: rgba(245, 245, 220, 0.7);
-        /*opacity: 0.7;*/
+        background-color: rgba(197, 198, 199, 0.6);
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -122,8 +125,7 @@ a.active {
 
     .navbar-default .navbar-shrink {
         padding: 5px 0;
-        /*background-color: transparent;*/
-        background-color: rgba(245, 245, 220, 0.8);
+        background-color: rgba(197, 198, 199, 0.6);
     }
 
     .navbar-default .navbar-shrink .navbar-brand {
@@ -141,8 +143,8 @@ a.active {
 }
 
 .navbar.scrolled {
-    background: rgb(245, 245, 220); /* IE */
-    background: rgba(245, 245, 220, 0.7); /* NON-IE */
+    background: rgb(197, 198, 199); /* IE */
+    background: rgba(197, 198, 199, 0.6); /* NON-IE */
 }
 
 
