@@ -50,13 +50,6 @@ a.active {
     color: #45A29E;
 }
 
-/*.navbar-default .navbar-brand:hover,
-.navbar-default .navbar-brand:focus,
-.navbar-default .navbar-brand:active,
-.navbar-default .navbar-brand.active {
-    color: #fec503;
-}*/
-
 .navbar-default .navbar-collapse {
     border-color: #C5C6C7;
 }
@@ -147,7 +140,14 @@ a.active {
     background: rgba(197, 198, 199, 0.6); /* NON-IE */
 }
 
-
+.first {
+    background-image: url(../img/BG5.jpg);
+    background-repeat: no-repeat;
+    /*background-size: contain;*/
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
 
 .main{
     padding-top: 60px;
@@ -156,10 +156,22 @@ a.active {
 }
 
 .main-heading{
-    background-image: url(../img/bg1.jpg);
-    background-repeat: repeat-x;
-    background-attachment: fixed;
+    /*background-image: url(../img/BG11.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;*/
     height : 40vh; width: 100%;
+}
+
+.sub-main{
+    width:100%;
+    height:58vh;
+    /*background-image: url(../img/BG5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;*/
 }
 
 .header-divs {
@@ -214,6 +226,14 @@ a.active {
     .buttons {
         padding-left: 10px;
     }
+
+    /*.first {
+        background-image: url(../img/ScrollBG1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+    }*/
 }
 
 
@@ -231,7 +251,7 @@ div {
     
     font-size: 6vw;
     font-weight: 300;
-    color: black;
+    color: gray;
 }
 
 .about-troika {
@@ -240,7 +260,7 @@ div {
     font-weight: 300;  
     font-family: Shadows Into Light ;
     margin-top: -10px;
-    color: :#45a29e;
+    color: #45a29e;
 }
 
 .about {
@@ -272,6 +292,13 @@ div {
     }
     .about-troika{
         font-size: 34px;
+    }
+    .about {
+        background-image: url(../img/ScrollBG1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        /*background-attachment: fixed;*/
     }
 }
 
@@ -467,10 +494,7 @@ div {
     }
  }
 
-.sub-main{
-    width:100%;
-    height:58vh;
-}
+
  
 
 
