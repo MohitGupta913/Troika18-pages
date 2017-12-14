@@ -7,10 +7,11 @@ html {
 
 body {
     font-family: Quicksand;
-    background-image: url(../img/ScrollBG.jpg);
+    background-color: rgb(14, 13, 13);
+    /*background-image: url(../img/ScrollBG.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
+    background-position: bottom center;*/
 }
 
 a,
@@ -45,7 +46,6 @@ a.active {
 .navbar-default {
     border-color: transparent;
     background-color: transparent;
-    border-radius: 10px;
 }
 
 .navbar-default .navbar-brand {
@@ -76,13 +76,13 @@ a.active {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
     letter-spacing: 1px;
-    color: #e18a07;
+    color: skyblue;
 }
 
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
     outline: 0;
-    color: #1F2833;
+    color: #45a29e;
 }
 
 .navbar-default .navbar-nav>.active>a {
@@ -93,16 +93,16 @@ a.active {
 
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-    color: #66FCF1;
-    background-color: #0B0C10;          /*old blue*/
+    color: black;
+    background-color: #c5c6c7;
 }
 
 @media only screen and (max-width: 768px) {
     
     .navbar-default {
-        padding: 12px 0;
+        /*padding: 12px 0;*/
         border: 0;
-        background-color: rgba(197, 198, 199, 0.6);
+        background-color: rgba(102, 252, 241, 0.5);
         -webkit-transition: padding .3s;
         -moz-transition: padding .3s;
         transition: padding .3s;
@@ -121,7 +121,7 @@ a.active {
 
     .navbar-default .navbar-shrink {
         padding: 5px 0;
-        background-color: rgba(197, 198, 199, 0.6);
+        background-color: rgba(102, 252, 241, 0.5);
     }
 
     .navbar-default .navbar-shrink .navbar-brand {
@@ -139,23 +139,44 @@ a.active {
 }
 
 .navbar.scrolled {
-    background: rgb(197, 198, 199); /* IE */
-    background: rgba(197, 198, 199, 0.6); /* NON-IE */
+    background: rgb(102, 252, 241); /* IE */
+    background: rgba(102, 252, 241, 0.5); /* NON-IE */
 }
 
 .first {
-    background-image: url(../img/BG5.jpg);
+    position: relative;
+    /*background-image: url(../img/BG5.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
     background-size: 100%;
+    background-color: rgb(14, 13, 13);*/
+}
+
+.background-image-main {
+    position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background:url(../img/BG5.jpg);
+    background-repeat: no-repeat;
+	background-size:contain;
+    z-index:1;
+    background-position: center;
+    background-attachment: fixed;
+	-webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(1px);	
 }
 
 .main{
     padding-top: 60px;
     padding-left:  100px;
-    color : green ;
+    color : #66fcf1 ;
 }
 
 .main-heading{
@@ -183,14 +204,15 @@ a.active {
     color: black;
     font-size: 15px;
 }
+
 .beta-home-button {
     border-radius: 15px;
-    border: 1px solid #e18a07;
+    border: 1px solid #66fcf1;
     padding: 10px 64px;
     color: black;
     font-size: 25px;
     box-shadow: 3px 3px 16px 2px transparent;
-    background-color: #e18a07;
+    background-color: #66fcf1;
 }
 
 .buttons {
@@ -268,11 +290,36 @@ div {
 }
 
 .about {
+    position: relative;
     width:100%;
     padding: 75px 100px;
     border-top: 6px solid #45A29E;
     border-bottom: 6px solid #45A29E;
     border-radius: 20px;
+    /*background-image: url(../img/ScrollBG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;*/
+}
+
+.background-image-about {
+    position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background:url(../img/ScrollBG.jpg);
+    background-repeat: no-repeat;
+	background-size:cover;
+    z-index:1;
+    background-position: center center;
+    background-attachment: fixed;
+	-webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(1px);	
 }
 
 .about-us{
@@ -285,7 +332,7 @@ div {
 .about-us-text{
     text-align: justify;
     font-size: 24px;
-    color: #eec015;
+    color: skyblue;
 }
 
 @media only screen and (max-width: 650px){
@@ -323,14 +370,15 @@ div {
 
 /* Add some shadows to create a card effect */
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.2);
 }
 
 /* Some left and right padding inside the container */
 .container1 {
     padding: 0 16px;
     text-align: center;
-    color: #e18a07;
+    color: #66FCF1;
+    background-color: rgba(14, 13, 13, 0.5);
 }
 
 /* Clear floats */
@@ -346,17 +394,45 @@ div {
 }
 
 .contact {
+    position: relative;
     text-align: center;
     margin-top: 18px;
     border-top: 6px solid #45A29E;
    /* border-bottom: 6px solid #45A29E;*/
     border-radius: 20px;
-    background-image: url(../img/BG11.jpg);
+    /*background-image: url(../img/BG11.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
     background-size: 100%;
+    background-color: rgb(14, 13, 13);
+    background-position-y: 30px;*/
+}
+
+.background-image-contact {
+	position:absolute;
+	left:0;
+	right:0;
+	top:0;
+	bottom:0;
+	background:url(../img/BG11.jpg);
+    background-repeat: no-repeat;
+	background-size:contain;
+    z-index:1;
+    background-position: center;
+    background-attachment: fixed;
+    background-position-y: 30px;
+	-webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(1px);	
+}
+
+.content {
+    position: relative;
+    z-index: 2;
 }
 
 .contact-head {
@@ -395,7 +471,7 @@ div {
   .social ul li {
     display: block;
     margin: 5px;
-    background: rgba(225, 138, 7, 0.36);
+    background: rgba(69, 162, 158, 0.36);
     width: 307px;
     text-align: right;
     padding: 10px;
@@ -420,7 +496,7 @@ div {
     color: #000;
   }
   .social ul li:hover i {
-    color: red;
+    color: #66FCF1;
     -webkit-transform: rotate(360deg);
     -moz-transform: rotate(360deg);
     -ms-transform: rotate(360deg);
@@ -459,9 +535,9 @@ div {
    width: 100%;
    height: 440px;
    background-color: transparent;
-   border : solid 5px #e18a07;
+   border : solid 5px skyblue;
    border-radius: 10px;
-   margin-bottom: 10px;
+   margin-bottom: 50px;
  }
 
 .contact-us {
@@ -472,7 +548,7 @@ div {
 
 .contact-us-sub {
     font-size: 2.1vw;
-    color:#eec015;
+    color: skyblue;
  }
 
 .foot{
